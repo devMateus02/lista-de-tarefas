@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal form div{
+  @apply flex flex-col gap-1
+}
+
+ input, select, textarea {
+  @apply border border-gray-500/50}
+  
+select option {
+ @apply bg-[rgb(36,36,36)]
+}
+
+ input, select, textarea{
+  @apply focus:to-blue-600  focus:border-blue-500 transition ease-in duration-[.2s] focus:outline-none focus:ring-0 p-2 rounded resize-none
+}
