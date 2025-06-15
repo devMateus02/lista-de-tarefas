@@ -191,7 +191,7 @@ function App() {
 
     {tarefasParaMostrar.map((tarefa) => (
       <div
-        className="container-list mt-3 p-2 flex flex-col sm:flex-row justify-between sm:items-center gap-2 border bg-[rgb(36,35,35)] border-gray-500/30 rounded-[5px] text-white"
+        className="container-list mt-3 p-2 flex sm:flex-row justify-between sm:items-center gap-2 border bg-[rgb(36,35,35)] border-gray-500/30 rounded-[5px] text-white"
         key={tarefa._id}
       >
         <label className="flex items-center gap-2">
@@ -383,12 +383,12 @@ function App() {
 
 
       {modalAdd && (
-        <div className="modal-overlay flex justify-center fixed top-0 left-0 bg-[rgba(0,0,0,.2)] w-full h-[100%] items-center  ">
+        <div className="modal-overlay flex justify-center  fixed top-0 left-0 bg-[rgba(0,0,0,.2)] w-[100%] h-[100%] items-center  ">
 
-          <div className="modal flex flex-col gap-2 max-w-[90%] w-[450px] bg-[rgb(36,36,36)] shadow-[-0px_0px_25px_0px] shadow-black  rounded-2xl max-h-[90vh] overflow-y-auto p-4">
+          <div className="modal flex flex-col gap-2 max-w-[90%] w-[90%] bg-[rgb(36,36,36)] shadow-[-0px_0px_25px_0px] shadow-black  rounded-2xl max-h-[90vh] overflow-y-auto p-2">
 
               <h2 className="text-[1.5em]">Adicionar tarefa</h2>
-            <form className="grid grid-cols-2 md:grid-cols-2 gap-4 p-4 max-w-xl mx-auto rounded text-left">
+            <form className="grid grid-cols-2 md:grid-cols-2 gap-4 p-4 max-w-xl w-[95%]mx-auto rounded text-left">
             
                 <div>
                   <label htmlFor="titulo">Titulo: </label>
