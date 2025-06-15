@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import Api from "../service/api";
+import Api from "../service/Api";
 import "./App.css";
-import api from "../service/api";
+
 import Botao from "../components/Botoes";
 
 
@@ -21,7 +21,7 @@ function App() {
   const refTitulo = useRef();
   const refDescricao = useRef();
   const refPrazo = useRef();
-
+  buscou
   const carregarTarefas = async () => {
     try {
       const resposta = await Api.get("/tarefas");
@@ -54,7 +54,7 @@ function App() {
 
   const atualizarStatus = async (id, novoStatus) => {
     try {
-      await api.put(`/tarefa/${id}/status`, { status: novoStatus });
+      await Api.put(`/tarefa/${id}/status`, { status: novoStatus });
       carregarTarefas();
     } catch (error) {
       console.error("erro ao atualizar status", error);
