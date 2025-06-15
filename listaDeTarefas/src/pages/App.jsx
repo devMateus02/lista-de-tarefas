@@ -385,7 +385,7 @@ function App() {
       {modalAdd && (
         <div className="modal-overlay flex justify-center  fixed top-0 left-0 bg-[rgba(0,0,0,.2)] w-[100%] h-[100%] items-center  ">
 
-          <div className="modal flex flex-col gap-2 max-w-[90%] w-[90%] bg-[rgb(36,36,36)] shadow-[-0px_0px_25px_0px] shadow-black  rounded-2xl max-h-[90vh] overflow-y-auto p-2">
+          <div className="modal flex flex-col gap-2 max-w-[90%] w-[86%] sm:w-[40%] bg-[rgb(36,36,36)] shadow-[-0px_0px_25px_0px] shadow-black  rounded-2xl max-h-[90vh] overflow-y-auto p-2">
 
               <h2 className="text-[1.5em]">Adicionar tarefa</h2>
             <form className="grid grid-cols-2 md:grid-cols-2 gap-4 p-4 max-w-xl w-[95%]mx-auto rounded text-left">
