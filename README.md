@@ -11,7 +11,6 @@ Uma aplicação web de lista de tarefas (To-Do List) feita com **React**, **Tail
 - 🗑️ Excluir tarefas
 - 🔄 Interface reativa com React
 - 🎨 Estilização moderna com Tailwind CSS
-- 🔗 Backend simples com Node.js (sem banco de dados)
 
 ---
 
@@ -26,6 +25,7 @@ Uma aplicação web de lista de tarefas (To-Do List) feita com **React**, **Tail
 ### Backend
 - Node.js
 - Express
+- Mongo DB
 
 
 
